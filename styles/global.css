@@ -63,15 +63,18 @@ body {
 }
 .flex-1 {
   flex: 1;
-
-  img{
-    border: 1px solid var(--input-stroke);
-    display: flex;
-    flex-direction: row;
-    max-width: 100%;
-    height: auto;
-  }
 }
 .flex-2 {
   flex: 1;
+}
+
+.head {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.75rem;
+
+  h2{
+    padding-block: 2px;
+  }
 }

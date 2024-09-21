@@ -12,18 +12,6 @@
 .sobre {
   display: flex;
   margin-bottom: 1.5rem;
-
-  .head {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 0.75rem;
-
-    h2{
-      padding-block: 2px;
-    }
-  }
 }
 
 .toggle-wrapper {

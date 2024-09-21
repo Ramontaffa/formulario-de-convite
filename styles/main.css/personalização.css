@@ -1,0 +1,67 @@
+#head-p {
+  margin-top: 3rem;
+}
+
+.flex-colors {
+  .radio-wrapper {
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-evenly;
+  }
+
+  .radio-inner input {
+    display: none;
+  }
+
+  .radio-inner input {
+    display: inline-flex;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 100%;
+    transition: 0.2s ease-in-out;
+    border: 0.4rem solid #2d3136;
+  }
+
+  .radio-inner input:hover {
+    transition: 0.2s ease-in-out;
+    border: 0.4rem solid #383D42;
+  }
+  .radio-inner input:checked {
+    border: 0.4rem solid var(--shape-hover);
+    outline: 2px solid var(--brand-light);
+  }
+
+  .radio-inner input#blue {
+    background-color: var(--brand-light);
+  }
+  .radio-inner input#navy {
+    background-color: var(--navy);
+  }
+  .radio-inner input#purple {
+    background-color: var(--purple);
+  }
+  .radio-inner input#fuschia {
+    background-color: var(--fushia);
+  }
+  .radio-inner input#pink {
+    background-color: var(--pink);
+  }
+  .radio-inner input#red {
+    background-color: var(--danger);
+  }
+  .radio-inner input#orange {
+    background-color: var(--orange);
+  }
+  .radio-inner input#yellow {
+    background-color: var(--yellow);
+  }
+  .radio-inner input#lime {
+    background-color: var(--lime);
+  }
+  .radio-inner input#green {
+    background-color: var(--green);
+  }
+  .radio-inner input#cyan {
+    background-color: var(--cyan);
+  }
+}
