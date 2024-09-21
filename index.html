@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>fomulário de convite</title>
+
+  <link rel="stylesheet" href="./styles/index.css">
+  <link href="https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="site">
+    <aside class="aside-container">
+    <header>
+      <img src="./assets/svg/Logo.svg" alt="">
+      <h1>Festivite</h1>
+      <h3>Crie um convite digital para o seu evento</h3>
+    </header>
+    </aside>
+
+    <main class="main-container">
+      <div id="header-inicial">
+        <header class="heading-md">
+          <h2>Crie seu convite</h2>
+        </header>
+      </div>
+
+      <form>
+        
+        <fieldset>
+          <div class="sobre">
+            <header class="head">
+              <img src="./assets/svg/calendar.svg" alt="">
+              <h3>Sobre o evento</h3>
+            </header>
+          </div>
+
+          <div class="input-wrapper">
+            <label for="title">Título</label>
+              <input 
+                id="title" 
+                name="title"
+                type="text"
+                placeholder="Nome do evento">
+          </div>
+
+          <div class="flex">
+            <div class="input-wrapper flex-2">
+              <label for="begining">Ínicio</label>               
+              <input type="text" id="begining" name="begining" placeholder="DD/MM/AAAA, --:--">
+            </div>
+
+            <div class="input-wrapper flex-1">
+              <label for="end">Fim</label>
+              <input type="end" id="end" name="end" placeholder="DD/MM/AAAA, --:--">
+            </div>
+          </div>
+          
+          <div class="input-row">
+            <div class="toggle-group">
+              <label for="">Tipo</label>
+
+              <div class="toggle-wrapper">
+                <input type="radio" id="presencial" name="toggle" checked>
+                <label for="presencial">
+                  <span class="icon">
+                    <img src="assets/svg/Box.svg" alt="Presencial">
+                  </span>
+                </label>
+              
+                <input type="radio" id="remoto" name="toggle">
+                <label for="remoto">
+                  <span class="icon">
+                    <img src="assets/svg/Box-1.svg" alt="Remoto">
+                  </span>
+                </label>
+              
+                <span class="toggle-bg"></span>
+              </div>
+
+
+            </div>
+
+            <div class="local">
+              <label for="local">local</label>
+              <input type="text" id="local" name="local" placeholder="Link ou endereço">
+            </div>
+
+          </div>
+        </fieldset>
+      </form>
+
+    </main>
+
+  </div>  
+</body>
+</html>

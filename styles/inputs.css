@@ -1,0 +1,24 @@
+input, textarea, select{
+  appearance: none;
+  width: 100%;
+  border-radius: .5rem;
+  border: 2px solid transparent;
+  outline: 1px solid var(--input-stroke);
+  padding: .75rem 1rem;
+
+  font-family: var(--font-family-body);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: auto;
+
+  color: var(--text-body);
+  background-color: var(--input-base);
+}
+
+label {
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: .75rem;
+  font: var(--text-small);
+  color: var(--text-body);
+}
