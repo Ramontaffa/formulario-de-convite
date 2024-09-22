@@ -3,6 +3,10 @@
 }
 
 .flex-colors {
+
+  #label-t{
+    margin-block: 1.5rem 1rem;
+  }
   .radio-wrapper {
     width: 100%;
     display: inline-flex;
@@ -15,8 +19,8 @@
 
   .radio-inner input {
     display: inline-flex;
-    width: 3rem;
-    height: 3rem;
+    width: 1rem;
+    aspect-ratio: 1 / 1;   
     border-radius: 100%;
     transition: 0.2s ease-in-out;
     border: 0.4rem solid #2d3136;
@@ -25,9 +29,10 @@
   .radio-inner input:hover {
     transition: 0.2s ease-in-out;
     border: 0.4rem solid #383D42;
+    cursor: pointer;
   }
   .radio-inner input:checked {
-    border: 0.4rem solid var(--shape-hover);
+    border: 0.4rem solid #383D42;
     outline: 2px solid var(--brand-light);
   }
 
@@ -63,5 +68,43 @@
   }
   .radio-inner input#cyan {
     background-color: var(--cyan);
+  }
+}
+
+.flex-theme {
+  .radio-wrapper {
+    justify-items: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+    gap: 2rem;
+  }
+
+  .radio-inner{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    background-color: #2D3136;
+    width: 11rem;
+    height: 6.43rem;
+    transition: 0.2s ease-in-out;
+    padding: 4px 4px 8px 4px;
+    border-radius: 0.5rem;
+
+    img {
+      width: 100%;
+      height: 4rem;
+      object-fit: cover;
+    }
+    & input {
+      position: absolute;
+      transition: 0.2s ease-in-out;
+      border-radius: 0.5rem;
+      width: 100%;
+      height: 100%;
+      outline: 2px solid var(--input-stroke);
+      opacity: 0;
+      cursor: pointer;
+    }
   }
 }

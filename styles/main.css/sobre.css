@@ -19,8 +19,8 @@
   display: flex;
   position: relative;
   align-items: center;
-  width: 103%;
-  height: 3rem;
+  width: 101%;
+  height: 3.1rem;
   border-radius: 0.5rem;
   background-color: var(--input-base);
   outline: 1px solid var(--input-stroke);
@@ -47,7 +47,7 @@
   top: 0.25rem;
   bottom: 0.25rem;
   width: calc(50% - 0.25rem);
-  background-color: var(--input-stroke); /* Cor selecionada */
+  background-color: var(--input-stroke);
   border-radius: 0.3rem;
   transition: transform 0.2s ease;
   z-index: 1;
