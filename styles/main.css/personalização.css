@@ -73,38 +73,158 @@
 
 .flex-theme {
   .radio-wrapper {
+    margin-bottom: 1.75rem;
     justify-items: center;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+    grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
   }
 
   .radio-inner{
     display: flex;
     flex-direction: column;
-    text-align: center;
-    position: relative;
-    background-color: #2D3136;
-    width: 11rem;
-    height: 6.43rem;
     transition: 0.2s ease-in-out;
-    padding: 4px 4px 8px 4px;
     border-radius: 0.5rem;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    background-color: var(--shape-button);
+    overflow: hidden;
 
-    img {
-      width: 100%;
-      height: 4rem;
+    & img {
+      display: grid;
+      justify-content: center;
+      align-items: center;
       object-fit: cover;
+      padding: 0.25rem 0.25rem 0rem 0.25rem;
     }
+
+    & label {
+      margin-block: 0.6rem 0.5rem;
+      font-size: 0.875rem;
+    }
+
     & input {
       position: absolute;
       transition: 0.2s ease-in-out;
       border-radius: 0.5rem;
       width: 100%;
       height: 100%;
-      outline: 2px solid var(--input-stroke);
-      opacity: 0;
       cursor: pointer;
+      outline: 1px solid transparent;
+      background-color: transparent;
     }
+  }
+
+  .radio-inner:hover {
+    background-color: var(--input-stroke);
+  }
+
+  .radio-inner input:checked {
+    border: 2px solid var(--brand-light);
+  }
+}
+
+.flex-bl-p {
+  position: relative;
+  .button-wrapper {
+    display: inline-flex;
+    position: relative;
+
+    & input {
+      appearance: none;
+      width: 4rem;
+      height: 2rem;
+      border-radius: 999px;
+    }
+    & .click {
+      position: absolute;
+      top: 1rem;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 4rem;
+      height: 2rem;
+      border-radius: 999px;
+      background-color: var(--input-base);
+      border: 1px solid var(--input-stroke);
+      -webkit-transition: 0.4s;
+      transition: 0.4s;
+      cursor: pointer;
+      }
+    & .click:before {
+      content: '';
+      position: absolute;
+      width: 1.5rem;
+      height: 1.5rem;
+      border-radius: 999px;
+      background-color: var(--input-stroke);
+      -webkit-transition: 0.4s;
+      transition: 0.4s;
+      top: 0.2rem;
+      left: 0.25rem;
+    }
+
+    & label.theme {
+      position: absolute;
+      top: 0.35rem;
+      left: 5rem;
+    }
+
+    & input:checked + .click {
+      background-color: var(--brand-light);
+    }
+
+    & input:checked + .click::before {
+      -webkit-transform: translateX(1.9rem);
+      -ms-transform: translateX(1.9rem);
+      transform: translateX(1.9rem);
+      background-color: var(--text-heading);
+    }
+
+    & input:checked + .click + label.theme::before {
+      content: "Claro";
+    }
+
+    & label.theme::before {
+      content: "Escuro";
+    }
+ }
+  .droparea-wrapper {
+    & label {
+      position: absolute;
+      top: -1rem;
+      left: 18rem;
+    }
+  }
+  .dropzone {
+    position: absolute;
+    top: 2.5rem;
+    left: 18rem;
+    display: inline-flex;
+    gap: .5rem;
+    padding: 0rem;
+
+    & input {
+      position: absolute;
+      width: 10rem;
+      height: 100%;
+      inset: 0;
+      opacity: 0;
+    }
+
+    &:hover, &:has(input:focus) {
+      outline-width: 0;
+      border-color: var(--stroke-hightlight);
+      background-color: var(--surface-secondary);
+    }
+
+  }
+  #drop-text {
+    position: absolute;
+    left: 26rem;
+    top: 3.3rem;
   }
 }

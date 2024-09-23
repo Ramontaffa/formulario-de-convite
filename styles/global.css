@@ -16,6 +16,7 @@
   --purple: #B259FF;
   --fushia: #FF59F9;
   --pink: #FF598B;
+  --danger: #FF5959;
   --orange:#FF8B59;
   --yellow: #FFCD59;
   --lime: #E1FF59;
@@ -23,7 +24,10 @@
   --cyan: #59FFF9;
   --navy: #6A59FF;
 
-  --danger: #FF5959;
+  --shape-background: #131516;
+  --shape-body: #212427;
+  --shape-button: #2D3136;
+  --shape-hover: #383D42;
 
   --text-body: #C8CDD0;
   --text-heading: #F9F9F9;
@@ -44,7 +48,7 @@
 body {
   font-family: var(--font-family-body);
   font-weight: 400;
-  line-height: auto;
+  line-height: 1.18rem;
   color: var(--text-body);
   background-color: #131516;
 }
@@ -53,7 +57,7 @@ body {
   font-family: var(--font-family-heading);
   font-weight: bold;
   font-size: 1.125rem;
-  line-height: auto;
+  line-height: 1.18rem;
   color: var(--text-heading);
 }
 
