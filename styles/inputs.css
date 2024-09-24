@@ -1,4 +1,4 @@
-input, textarea, select{
+input, textarea, select, text{
   appearance: none;
   width: 100%;
   border-radius: .5rem;
@@ -13,6 +13,46 @@ input, textarea, select{
 
   color: var(--text-body);
   background-color: var(--input-base);
+
+  &:hover {
+    border-color: var(--brand-light) !important;
+    outline: 1px solid var(--brand-light);
+  }
+  
+  &:focus {
+    border-color: var(--brand-light);
+    outline: none;
+  }
+
+  &::placeholder{
+    color: var(--input-placeholder);
+  }
+
+  &[required] + .error {
+    display: flex;
+    align-items: center;
+    gap: .25rem;
+
+    font: var(--body);
+    color: var(--danger);
+
+    margin-top: .25rem;
+  }
+
+  &:valid + .error {
+    display: none;
+  }
+
+  &:not(:focus):invalid {
+    border: 1px solid transparent;
+  }
+  &:not(:focus):invalid + .error {
+    display: none;
+  }
+  &:invalid {
+    border: 2px solid var(--danger);
+  }
+
 }
 
 label {

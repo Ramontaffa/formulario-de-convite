@@ -175,6 +175,11 @@
 
     & input:checked + .click {
       background-color: var(--brand-light);
+
+    }
+
+    & input:hover + .click {
+      border: 1px solid var(--brand-light);
     }
 
     & input:checked + .click::before {

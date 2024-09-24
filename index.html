@@ -45,18 +45,33 @@
                 id="title" 
                 name="title"
                 type="text"
-                placeholder="Nome do evento">
+                placeholder="Nome do evento"
+                required>
+              <div class="error">
+                <img src="/assets/svg/circle-alert.svg" alt="ícone de erro">
+                <span>Campo obrigatório</span>
+              </div>
           </div>
 
           <div class="flex">
             <div class="input-wrapper flex-2">
               <label for="begining">Ínicio</label>               
-              <input type="text" id="begining" name="begining" placeholder="DD/MM/AAAA, --:--">
+              <input type="text" id="begining" name="begining" placeholder="DD/MM/AAAA, --:--" required>
+              <div class="error">
+                <img src="/assets/svg/circle-alert.svg" alt="ícone de erro">
+                <span>Campo obrigatório</span>
+              </div>
+
             </div>
 
             <div class="input-wrapper flex-1">
               <label for="end">Fim</label>
-              <input type="end" id="end" name="end" placeholder="DD/MM/AAAA, --:--">
+              <input type="end" id="end" name="end" placeholder="DD/MM/AAAA, --:--" required>
+              <div class="error">
+                <img src="/assets/svg/circle-alert.svg" alt="ícone de erro">
+                <span>Campo obrigatório</span>
+              </div>
+
             </div>
           </div>
           
@@ -72,7 +87,7 @@
                   </span>
                 </label>
               
-                <input type="radio" id="remoto" name="toggle">
+                <input type="radio" id="remoto" name="toggle" >
                 <label for="remoto">
                   <span class="icon">
                     <img src="assets/svg/Box-1.svg" alt="Remoto">
@@ -87,14 +102,23 @@
 
             <div class="local flex-2">
               <label for="local">local</label>
-              <input type="text" id="local" name="local" placeholder="Link ou endereço">
+              <input type="text" id="local" name="local" placeholder="Link ou endereço" required>
+              <div class="error">
+                <img src="/assets/svg/circle-alert.svg" alt="ícone de erro">
+                <span>Campo obrigatório</span>
+              </div>
             </div>
 
           </div>
 
           <div class="description">
             <label for="description">Descrição</label>
-            <textarea name="description" id="description" cols="30" rows=5" placeholder="Escreva sobre os detalhes do evento"></textarea>
+            <textarea name="description" id="description" cols="30" rows="5" placeholder="Escreva sobre os detalhes do evento"></textarea>
+            <div class="error">
+              <img src="/assets/svg/circle-alert.svg" alt="ícone de erro">
+              <span>Campo obrigatório</span>
+            </div>
+
           </div>
 
         </fieldset>
@@ -235,7 +259,7 @@
               <label for="">Foto da capa</label>
 
               <div class="dropzone">
-                <input type="file" id="birth-file" name="birth-file">
+                <input type="file" id="birth-file" name="birth-file" required>
                 <img src="./assets/svg/dropzone.svg" alt="">
               </div>
               <p id="drop-text">Clique aqui para selecionar os arquivos</p>
@@ -257,18 +281,31 @@
                 id="name" 
                 name="name"
                 type="text"
-                placeholder="Nome completo">
+                placeholder="Nome completo"
+                required>
+                <div class="error">
+                  <img src="/assets/svg/circle-alert.svg" alt="ícone de erro">
+                  <span>Campo obrigatório</span>
+                </div>
           </div>
 
           <div class="flex">
             <div class="input-wrapper flex-2">
               <label for="email">E-mail</label>               
-              <input type="text" id="email" name="email" placeholder="exemplo@email.com">
+              <input type="text" id="email" name="email" placeholder="exemplo@email.com" required>
+              <div class="error">
+                <img src="/assets/svg/circle-alert.svg" alt="ícone de erro">
+                <span>Campo obrigatório</span>
+              </div>
             </div>
 
             <div class="input-wrapper flex-1">
               <label for="telefone">Telefone</label>
-              <input type="telefone" id="telefone" name="telefone" placeholder="(99) 99999-9999 ">
+              <input type="telefone" id="telefone" name="telefone" placeholder="(99) 99999-9999" required>
+              <div class="error">
+                <img src="/assets/svg/circle-alert.svg" alt="ícone de erro">
+                <span>Campo obrigatório</span>
+              </div>
             </div>
           </div>
 
@@ -277,7 +314,7 @@
         <footer id="footer-display">
           <div class="footer-text" id="layout-footer">
             <div class="checkbox-image"></div>
-            <input type="checkbox" name="terms" id="terms">
+            <input type="checkbox" name="terms" id="terms" required>
             <label for="terms">
               Li e concordo com os <strong> Termos e Condições</strong> e com a <strong>Política de Privacidade</strong>
             </label>
